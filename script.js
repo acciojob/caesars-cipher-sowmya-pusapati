@@ -17,17 +17,17 @@ function rot13(encodedStr){
 		{
 			if(lookup[encodedStr.charAt(i)]===undefined)
 			{
-				decodedArr[i]=encodedStr.charAt(i);
+				decodedArr.push(encodedStr.charAt(i));
 			}
 			else
 			{
-				decodedArr[i]=lookup[encodedStr.charAt(i)];
+				decodedArr.push(lookup[encodedStr.charAt(i)]);
 			}
 			
 		}
 
  // return ;
-	return decodedArr
+	return decodedArr;
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
